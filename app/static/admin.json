@@ -1,0 +1,65 @@
+{
+  "1": {
+    "chat_id": [
+      "489033965"
+    ],
+    "name": "pattern2",
+    "admin_key": [
+      "hjk329JKH33480shaH4KbT73kkk1hac"
+    ],
+    "telegram_token": "1077120736:AAFmq-ZM5pCAMMqFLxv5AbbdkOaQ25KggJg",
+    "calendar_id": "i94s3g9i58u1vs3oftq1srr3ek@group.calendar.google.com",
+    "delta": "30",
+    "min_order": "30",
+    "not_work_day": [
+      "3"
+    ],
+    "work_time": [
+      "13:00",
+      "22:30"
+    ],
+    "orders_today": "5"
+  },
+  "2": {
+    "chat_id": [
+      "489033965",
+      "227885751",
+      "645478426"
+    ],
+    "admin_key": [
+      "oi83jkjgLJ542BO9SB2Peeeeg"
+    ],
+    "telegram_token": "1266259254:AAEG0R25jRyZOiXPWykpQL_UYQoWAIaxYG4",
+    "calendar_id": "8tfksv7fpvg9o0qp9q57nb0bl4@group.calendar.google.com",
+    "delta": "30",
+    "min_order": "60",
+    "not_work_day": [],
+    "work_time": [
+      "10:00",
+      "22:00"
+    ],
+    "orders_today": "5"
+  },
+  "3": {
+    "chat_id": [
+      "645478426",
+      "615056454",
+      "504278315"
+    ],
+    "admin_key": [
+      "sdfjIOI5423NMD20T40JKREg"
+    ],
+    "telegram_token": "1093783730:AAGWrTrqizGUUipJxxzwfz1QDeeZmlMjzHs",
+    "calendar_id": "jpm3dmgeq6tq9orgro812cak78@group.calendar.google.com",
+    "delta": "15",
+    "min_order": "60",
+    "not_work_day": [
+      "7"
+    ],
+    "work_time": [
+      "09:00",
+      "21:00"
+    ],
+    "orders_today": "40"
+  }
+}
