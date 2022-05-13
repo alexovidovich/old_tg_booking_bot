@@ -39,7 +39,7 @@ class InlineKeyboardMarkup:
         if with_info_or_not:
             for j,i in enumerate(lists):
                 keyboard.append([{'text':f'{i}','callback_data':f'bt,{i[2:7]},{i[11:16]},{date}'}])
-        keyboard.insert(0,[{'text':'🔙                                      📅                                      🔙','callback_data':'календарь'}])
+        keyboard.insert(0,[{'text':'🔙 📅 🔙','callback_data':'календарь'}])
         keyboard.insert(1,[{'text':'                                                                                                                             ','callback_data':'ffffew'}])
         keyboard.insert(1,[{'text':f'{texts.get("4")}','callback_data':'frtert'}])
         not_ready = {'inline_keyboard': keyboard }
@@ -167,7 +167,7 @@ class Calendar:
         days_of = ['пн','вт','ср','чт','пт','сб','вс']
         days_of_final = []
         for each in days_of:
-            each = {'text':f'| {each} |','callback_data':'{each}'}
+            each = {'text':f'{each}','callback_data':f'{each}'}
             days_of_final.append(each)
 
         calendar.insert(0,days_of_final)

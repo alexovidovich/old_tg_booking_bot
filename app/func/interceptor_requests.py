@@ -70,6 +70,7 @@ class Interceptor:
                 Helper_Handler_for_interceptor.change_date_in_calendar(data,worker)
 
             if 'day' in data['call_back']:
+                print('CHOOSING A DAY')
                 if 'today'in data['call_back']:
                     Helper_Handler_for_interceptor.get_selected_date(data,worker,today=True)
                 else:
@@ -312,18 +313,20 @@ class Helper_Handler_for_interceptor:
     @staticmethod
     def get_selected_date(data,worker,today=None):
         try:
-
-
             if today:
+                print('today')
                 monthes,years,year_now,year,month = data_to_read.get_date(data,True)
                 day = datetime.datetime.now(pytz.timezone('Europe/Minsk')).strftime('%d')
             else:
                 monthes,years,year_now,year,month = data_to_read.get_date(data)
                 day = data['call_back'][:2] if data['call_back'][:2].isdigit() else data['call_back'][:1]
+                print(day)
             date = [year,month,day]
             worker[1](data,date,today)
         except:
+            print('ERROR CHECKING DATE')
             pass
+
 
 
 

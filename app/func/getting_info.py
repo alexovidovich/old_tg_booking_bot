@@ -21,16 +21,16 @@ class data_to_read(object):
 
     @staticmethod
     def writting_json(data,name):
-        with open(f'/home/alexvenv/new_wattson/app/static/{name}.json','w',encoding='utf-8') as f:
+        with open(f'/home/alexovidovich/app/static/{name}.json','w',encoding='utf-8') as f:
             json.dump(data,f,indent=2,ensure_ascii=False)
     @classmethod
     def reading_json(cls,name):
-        with open(f'/home/alexvenv/new_wattson/app/static/{name}.json','r',encoding='utf-8') as f:
+        with open(f'/home/alexovidovich/app/static/{name}.json','r',encoding='utf-8') as f:
             data = json.load(f)
         return data
     @staticmethod
     def add_json(data,name):
-        with open(f'/home/alexvenv/new_wattson/app/static/{name}.json','a',encoding='utf-8') as f:
+        with open(f'/home/alexovidovich/app/static/{name}.json','a',encoding='utf-8') as f:
             json.dump(data,f,indent=2,ensure_ascii=False)
 
 

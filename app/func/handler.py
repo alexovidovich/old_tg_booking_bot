@@ -63,7 +63,7 @@ class Handler(object):
             year= real_time[:4]
             month = real_time[5:]
         for_json =InlineKeyboardMarkup.creation_calendar(data,int(month),year)
-        text = data_to_read.reading_json('texts').get(data['bot']).get('8')
+        text = data_to_read.reading_json('texts').get(data['bot']).get('3')
         obj = Object.return_obj(chat_id = data['chat_id'],reply_markup=for_json,message_id=data['message_id'],text=text)#chat_id,text,photo=None,reply_markup=None,message_id=None
         Send(data['main_url'],method,obj)
 
